@@ -6,8 +6,8 @@
 }
 
 .form-container {
-    border: 2px solid rgb(219, 216, 216);
-    padding: 2rem;
+    /* border: 2px solid rgb(219, 216, 216); */
+    /* padding: 2rem 5rem; */
 }
 
 .form-header {
@@ -18,6 +18,130 @@
     font-size: 4rem;
 }
 
-.form-group label + input {
+.form-group {
+    border: 2px solid rgb(219, 216, 216);
+    padding: 2rem 5rem;
+}
+
+.form-group input {
+    margin: 1.5rem auto;
     display: block;
+    padding: .75rem;
+    width: 93%;
+    border-radius: 3px;
+}
+
+/* .form-login-button {
+    text-align: center;
+} */
+
+.form-login-button button{
+    padding: .5rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.form-footer {
+    margin-top: 1rem;
+}
+
+.form-group .form-footer span {
+    font-size: 1.2rem;
+}
+
+.form-footer span a,
+.form-footer span a:link,
+.form-footer span a:visited {
+    text-decoration: none;
+    color: darkgray;
+}
+
+
+.form-label-username {
+    position: absolute;
+    font-size: .9rem;
+    top: 11rem;
+    margin-left: 1.5rem;
+    transition: all .25s;
+}
+
+.form-group input {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: 2rem;
+}
+
+.form-group .form-label-container-username span {
+    text-transform: uppercase;
+}
+
+.form-group .form-label-container-username input:placeholder-shown + span {
+    font-size: 1.6rem;
+    top: 12rem;
+}
+
+.form-group .form-label-container-username input:placeholder-shown {
+    font-size: 1.6rem;
+}
+
+.form-label-email {
+    position: absolute;
+    font-size: .9rem;
+    top: 17.2rem;
+    margin-left: 1.5rem;
+    transition: all .25s;
+}
+
+.form-group .form-label-container-email span {
+    text-transform: uppercase;
+}
+
+.form-group .form-label-container-email input:placeholder-shown + span {
+    font-size: 1.6rem;
+    top: 18rem;
+}
+
+.form-group .form-label-container-email input:placeholder-shown {
+    font-size: 1.6rem;
+}
+
+.form-label-password {
+    position: absolute;
+    font-size: .9rem;
+    top: 23.6rem;
+    margin-left: 1.5rem;
+    transition: all .25s;
+}
+
+.form-group .form-label-container-password span {
+    text-transform: uppercase;
+}
+
+.form-group .form-label-container-password input:placeholder-shown + span {
+    font-size: 1.6rem;
+    top: 24.5rem;
+}
+
+.form-group .form-label-container-password input:placeholder-shown {
+    font-size: 1.6rem;
+}
+
+.form-signup {
+    text-align: center;
+    margin-top: 1rem;
+    border: 2px solid rgb(219, 216, 216);
+    padding: 2rem 5rem;
+}
+
+.form-signup span {
+    font-size: 1.5rem;
+}
+
+.form-signup span a,
+.form-signup span a:link,
+.form-signup span a:visited {
+    text-decoration: none;
+    color: rgb(82, 190, 218);
 }
