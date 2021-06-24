@@ -34,6 +34,22 @@ const Form = () => {
                         <span>By signing up, you agree to our <a href="#">Terms , Data Policy and Cookies Policy .</a></span>
                     </div>
 
+                    <div className="or">
+                        <div>
+                            <hr/>
+                        </div>
+                        <div>
+                            <span>or</span>
+                        </div>
+                        <div>
+                            <hr/>
+                        </div>
+                    </div>
+
+                    <div className="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+
                 </div>
 
                 <div className="form-signup">
