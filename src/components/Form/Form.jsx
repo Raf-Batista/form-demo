@@ -28,7 +28,9 @@ const Form = () => {
                         <span className="form-label-password">Password</span>
                     </label>
                      
-                 
+                    <div className="form-group-button">
+                        <button>Log in</button>
+                    </div>
 
                     <div className="form-footer">
                         <span>By signing up, you agree to our <a href="#">Terms , Data Policy and Cookies Policy .</a></span>

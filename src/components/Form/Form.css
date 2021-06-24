@@ -128,9 +128,17 @@
     font-size: 1.6rem;
 }
 
+
+.form-group-button button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 .form-signup {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border: 2px solid rgb(219, 216, 216);
     padding: 2rem 5rem;
 }
