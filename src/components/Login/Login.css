@@ -1,29 +1,24 @@
-.form {
+.form-login {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
 }
 
-.form-container {
-    /* border: 2px solid rgb(219, 216, 216); */
-    /* padding: 2rem 5rem; */
-}
-
-.form-header {
+.form-header-login {
     text-align: center;
 }
 
-.form-header h1 {
+.form-header-login h1 {
     font-size: 4rem;
 }
 
-.form-group {
+.form-group-login {
     border: 2px solid rgb(219, 216, 216);
     padding: 2rem 5rem;
 }
 
-.form-group input {
+.form-group-login input {
     margin: 1.5rem auto;
     display: block;
     padding: .75rem;
@@ -35,7 +30,7 @@
     text-align: center;
 } */
 
-.form-login-button button{
+.form-login-button-login button{
     padding: .5rem;
     cursor: pointer;
     display: block;
@@ -43,23 +38,23 @@
     border-radius: 3px;
 }
 
-.form-footer {
+.form-footer-login {
     margin-top: 2rem;
 }
 
-.form-group .form-footer span {
+.form-group-login .form-footer-login span {
     font-size: 1.2rem;
 }
 
-.form-footer span a,
-.form-footer span a:link,
-.form-footer span a:visited {
+.form-footer-login span a,
+.form-footer-login span a:link,
+.form-footer-login span a:visited {
     text-decoration: none;
     color: darkgray;
 }
 
 
-.form-label-username {
+.form-label-username-login {
     position: absolute;
     font-size: .9rem;
     top: 11rem;
@@ -67,26 +62,27 @@
     transition: all .25s;
 }
 
-.form-group input {
+.form-group-login input {
     padding: 1.2rem;
     font-size: 1.2rem;
     height: 2rem;
 }
 
-.form-group .form-label-container-username span {
+.form-group-login .form-label-container-username-login span {
     text-transform: uppercase;
 }
 
-.form-group .form-label-container-username input:placeholder-shown + span {
+.form-group-login .form-label-container-username-login input:placeholder-shown + span {
     font-size: 1.6rem;
     top: 12rem;
 }
 
-.form-group .form-label-container-username input:placeholder-shown {
+.form-group-login .form-label-container-username-login input:placeholder-shown {
     font-size: 1.6rem;
 }
 
-.form-label-email {
+
+.form-label-password-login {
     position: absolute;
     font-size: .9rem;
     top: 17.2rem;
@@ -94,62 +90,41 @@
     transition: all .25s;
 }
 
-.form-group .form-label-container-email span {
+.form-group-login .form-label-container-password-login span {
     text-transform: uppercase;
 }
 
-.form-group .form-label-container-email input:placeholder-shown + span {
+.form-group-login .form-label-container-password-login input:placeholder-shown + span {
     font-size: 1.6rem;
     top: 18rem;
 }
 
-.form-group .form-label-container-email input:placeholder-shown {
-    font-size: 1.6rem;
-}
-
-.form-label-password {
-    position: absolute;
-    font-size: .9rem;
-    top: 23.6rem;
-    margin-left: 1.5rem;
-    transition: all .25s;
-}
-
-.form-group .form-label-container-password span {
-    text-transform: uppercase;
-}
-
-.form-group .form-label-container-password input:placeholder-shown + span {
-    font-size: 1.6rem;
-    top: 24.5rem;
-}
-
-.form-group .form-label-container-password input:placeholder-shown {
+.form-group-login .form-label-container-password-login input:placeholder-shown {
     font-size: 1.6rem;
 }
 
 
-.form-group-button button {
+.form-group-button-login button {
     width: 100%;
     padding: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-.form-signup {
+.form-signup-login {
     text-align: center;
     margin-top: 2rem;
     border: 2px solid rgb(219, 216, 216);
     padding: 2rem 5rem;
 }
 
-.form-signup span {
+.form-signup-login span {
     font-size: 1.5rem;
 }
 
-.form-signup span a,
-.form-signup span a:link,
-.form-signup span a:visited {
+.form-signup-login span a,
+.form-signup-login span a:link,
+.form-signup-login span a:visited {
     text-decoration: none;
     color: rgb(82, 190, 218);
 }
@@ -171,14 +146,14 @@
     margin: 0 1rem;
 }
 
-.forgot-password {
+.forgot-password-login {
     text-align: center;
     margin-top: 2rem;
 }
 
-.forgot-password a,
-.forgot-password a:link,
-.forgot-password a:visited {
+.forgot-password-login a,
+.forgot-password-login a:link,
+.forgot-password-login a:visited {
     text-decoration: none;
     color: rgb(82, 190, 218);
     font-size: 1.2rem;
