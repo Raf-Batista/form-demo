@@ -21,7 +21,7 @@ const login = async (data) => {
     return token;
   }
   
-  return "Something went wrong!";
+   return "Something went wrong!";
   } catch (error) {
     console.log(error);
   }

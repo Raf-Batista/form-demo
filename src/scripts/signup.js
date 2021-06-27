@@ -7,28 +7,33 @@ const signup = async (data) => {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
-                Accept: "application/json",
+                "Accept": "application/json",
               },
             body: JSON.stringify(data)
         });
     
         if (response.ok) {
     
-         //   const data = await response.json();
-            URL = 'http://a25868876df6a4d7a8a76c0eed8f6a5d-1397542208.us-west-2.elb.amazonaws.com/auth'
-            
+         
+         //   URL = 'http://a25868876df6a4d7a8a76c0eed8f6a5d-1397542208.us-west-2.elb.amazonaws.com/auth'
+                URL = 'http://localhost:9100/api/auth';
                 const response = await fetch(URL, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
-                    Accept: "application/json",
+                    "Accept": "application/json",
                 },
                 body: JSON.stringify(data)
             });
     
-            const data = await response.json();
+            const authHeader = response.headers.get('Authorization');
     
-          return data; 
+            if (response.ok && authHeader && authHeader.includes('Bearer'))  {
+                const token = authHeader.split(' ')[1];
+               
+                return token;
+              }
+              
         }
         
         return "Something went wrong!";
