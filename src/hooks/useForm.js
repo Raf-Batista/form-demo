@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-const useForm = (initialValue, callback) => {
+const useForm = (initialValue) => {
     const [values, setValues] = useState(initialValue);
 
-    const handleChange = ({ target }: any) => {
+    const handleChange = ({ target }) => {
         setValues((values) => ({
             ...values,
             [target.name]: target.value
@@ -17,7 +17,8 @@ const useForm = (initialValue, callback) => {
     return {
         values,
         handleChange,
-        setValues
+        setValues,
+        reset
     }
 };
 

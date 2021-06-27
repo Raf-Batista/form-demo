@@ -6,19 +6,23 @@ import { isExpired, decodeToken } from "react-jwt";
 
 const Login = () => {
     const initialValues = {username: "", password: ""};
-    const {values, setValues, handleChange} = useForm(initialValues);
+    const {values, setValues, handleChange, reset} = useForm(initialValues);
     const {username, password} = values;
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        
         const token = await login(values);
         const decodedToken = decodeToken(token);
         const isTokenExpired = isExpired(token);
-        console.log("token", token);
+        
+        console.log("Auth Token", token);
+        console.log("");
         console.log("decodedToken", decodedToken);
+        console.log("");
         console.log("isExpired", isTokenExpired);
 
-        setValues(initialValues);
+        reset();
     }
 
     return (
