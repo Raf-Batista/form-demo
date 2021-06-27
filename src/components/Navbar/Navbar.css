@@ -1,0 +1,57 @@
+.navbar {
+    position: relative;
+    background-color: lightgray;
+}
+
+.navbar-header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar-header-logo-container {
+    width: 5rem;
+    height: 10vh;
+    display: flex;
+    margin-left: 1rem;
+
+}
+.navbar-header-logo-container img {
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.navbar-header-searchbar {
+    margin-top: auto;
+}
+
+.navbar-header-searchbar-container {
+  width: 50rem;
+   
+}
+
+.navbar-header-searchbar-container input {
+    width: 100%;
+     padding: .5rem;
+  }
+  
+
+.navbar-header-accounts-container {
+    width: 5rem;
+    height: 10vh;
+    display: flex;
+    margin-right: 2rem;
+
+}
+.navbar-header-accounts-container img {
+    height: 5rem;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+
+.navbar-tabs {
+    height: 6vh;
+    background-color: gray;
+}
